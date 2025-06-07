@@ -57,6 +57,9 @@ body {
 
 .botoes {
     display: block;
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .botao.ativo {
@@ -64,31 +67,22 @@ body {
     border-bottom: 4px solid var(--vermelho);
 }
 
-/* INÍCIO DA CORREÇÃO */
 .abas-textos {
     background-color: var(--fundo-bloco);
     padding: 40px;
     border-radius: 0 0 40px 40px;
-    position: relative;
-    min-height: 300px; /* Defina um valor fixo conforme necessário */
-}
-
-.aba-conteudo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease-in-out;
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .aba-conteudo.ativo {
-    position: relative;
-    opacity: 1;
-    pointer-events: all;
+    display: block;
 }
-/* FIM DA CORREÇÃO */
+
+.aba-conteudo {
+    display: none;
+}
 
 .aba-conteudo-titulo-principal {
     font-size: 28px;
