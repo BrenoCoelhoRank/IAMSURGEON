@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
 :root {
-    --vermelho-escuro: #202020;
+    --preto: #202020;
     --vermelho: #dd0000;
     --branco: #fdfdfd;
-    --rosa-claro: #a30000;
-    --rosa: rgb(255, 64, 64);
+    --vermelho-sangue: #a30000;
+    --vermelho-claro: rgb(255, 64, 64);
     --fundo-bloco: rgba(71, 0, 0, 0.959);
 }
 
 body {
-    background-color: var(--vermelho-escuro);
+    background-color: var(--preto);
     color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
 }
@@ -37,7 +37,7 @@ body {
 
 .botao {
     font-family: 'Chakra Petch', sans-serif;
-    background-color: var(--rosa);
+    background-color: var(--vermelho-claro);
     color: var(--branco);
     display: flex;
     justify-content: center;
@@ -45,9 +45,9 @@ body {
     font-size: 18px;
     align-items: center;
     width: 100%;
-    border-bottom: 4px solid var(--rosa-claro);
-    border-left: 2px solid var(--rosa-claro);
-    border-right: 2px solid var(--rosa-claro);
+    border-bottom: 4px solid var(--vermelho-sangue);
+    border-left: 2px solid var(--vermelho-sangue);
+    border-right: 2px solid var(--vermelho-sangue);
     border-top: none;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .botao.ativo {
-    background-color: var(--rosa-claro);
+    background-color: var(--vermelho-sangue);
     border-bottom: 4px solid var(--vermelho);
 }
 
