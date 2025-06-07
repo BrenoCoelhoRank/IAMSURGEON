@@ -64,19 +64,31 @@ body {
     border-bottom: 4px solid var(--vermelho);
 }
 
+/* INÍCIO DA CORREÇÃO */
 .abas-textos {
     background-color: var(--fundo-bloco);
     padding: 40px;
     border-radius: 0 0 40px 40px;
-}
-
-.aba-conteudo.ativo {
-    display: block;
+    position: relative;
+    min-height: 300px; /* Defina um valor fixo conforme necessário */
 }
 
 .aba-conteudo {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
 }
+
+.aba-conteudo.ativo {
+    position: relative;
+    opacity: 1;
+    pointer-events: all;
+}
+/* FIM DA CORREÇÃO */
 
 .aba-conteudo-titulo-principal {
     font-size: 28px;
